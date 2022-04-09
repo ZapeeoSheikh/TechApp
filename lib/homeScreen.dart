@@ -115,11 +115,13 @@ class HomeScreen extends StatelessWidget {
                           color: MyColor.ThemeColor,
                           fontSize: 13,
                         )),
-                    Text("@ Muhammad Rameez",
-                        style: TextStyle(
-                          color: MyColor.ThemeColor,
-                          fontSize: 13,
-                        )),
+                    Text(
+                      "@ Muhammad Rameez",
+                      style: TextStyle(
+                        color: MyColor.ThemeColor,
+                        fontSize: 13,
+                      ),
+                    ),
                   ],
                 ),
               )
