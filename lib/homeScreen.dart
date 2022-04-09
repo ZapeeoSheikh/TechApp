@@ -50,26 +50,24 @@ class HomeScreen extends StatelessWidget {
                 height: 135,
               ),
               Container(
-                margin: EdgeInsets.only(left: 60, right: 60),
+                margin: EdgeInsets.only(left: 50, right: 50),
                 height: 50,
                 width: MediaQuery.of(context).size.width,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    InkWell(
-                      onTap: () {},
-                      child: Container(
-                        child: Text(
-                          "Create Account",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                          ),
+                child: InkWell(
+                  onTap: () {},
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Create Account",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
@@ -80,21 +78,24 @@ class HomeScreen extends StatelessWidget {
                 height: 15,
               ),
               Container(
-                margin: EdgeInsets.only(left: 60, right: 60),
+                margin: EdgeInsets.only(left: 50, right: 50),
                 height: 50,
                 width: MediaQuery.of(context).size.width,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Login",
-                      style: TextStyle(
-                        color: MyColor.ThemeColor,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
+                child: InkWell(
+                  onTap: () {},
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Login",
+                        style: TextStyle(
+                          color: MyColor.ThemeColor,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
