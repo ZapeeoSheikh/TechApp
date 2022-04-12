@@ -15,8 +15,8 @@ class LoginPage extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.all(5),
-                    height: 50,
+                    margin: EdgeInsets.all(10),
+                    height: 220,
                     width: 30,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
@@ -25,8 +25,8 @@ class LoginPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.all(5),
-                    height: 50,
+                    margin: EdgeInsets.all(10),
+                    height: 220,
                     width: 30,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
@@ -38,9 +38,9 @@ class LoginPage extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              margin: EdgeInsets.all(5),
-              height: 50,
-              width: 30,
+              margin: EdgeInsets.all(10),
+              height: 220,
+              width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Color(0xFF151515)),
@@ -51,8 +51,8 @@ class LoginPage extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.all(5),
-                    height: 50,
+                    margin: EdgeInsets.all(10),
+                    height: 220,
                     width: 30,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
@@ -61,8 +61,8 @@ class LoginPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.all(5),
-                    height: 50,
+                    margin: EdgeInsets.all(10),
+                    height: 220,
                     width: 30,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
