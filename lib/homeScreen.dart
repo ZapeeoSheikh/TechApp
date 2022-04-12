@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tech_app/routes.dart';
 
 import 'color.dart';
 
@@ -55,7 +56,9 @@ class HomeScreen extends StatelessWidget {
                 height: 50,
                 width: MediaQuery.of(context).size.width,
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, routes.signup);
+                  },
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -83,7 +86,9 @@ class HomeScreen extends StatelessWidget {
                 height: 50,
                 width: MediaQuery.of(context).size.width,
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, routes.login);
+                  },
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
