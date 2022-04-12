@@ -1,7 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tech_app/color.dart';
 import 'package:tech_app/homeScreen.dart';
+
+import 'login.dart';
+import 'routes.dart';
+import 'signup.dart';
 
 void main() {
   runApp(MyApp());
