@@ -18,6 +18,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {routes.login},
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: MyColor.Background,
