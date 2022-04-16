@@ -83,6 +83,9 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               Container(
+                alignment: Alignment.center,
+                child:
+                    Text("Calculate Your BMI", style: TextStyle(fontSize: 20)),
                 margin: EdgeInsets.only(top: 10.0),
                 width: double.infinity,
                 height: bottomContainerHeight,
