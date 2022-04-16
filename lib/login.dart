@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -25,13 +27,24 @@ class LoginPage extends StatelessWidget {
                   children: [
                     Expanded(
                       child: MyContainer(
+                        childCard: MyCard(
+                          icon: Icon(
+                            FontAwesomeIcons.mars,
+                            size: 50,
+                          ),
+                          tag: 'MALE',
+                        ),
                         colour: mycolour,
                       ),
                     ),
                     Expanded(
                       child: MyContainer(
-                        childCard: Column(
-                          children: [Icon()],
+                        childCard: MyCard(
+                          icon: Icon(
+                            FontAwesomeIcons.venusMars,
+                            size: 50,
+                          ),
+                          tag: 'FEMALE',
                         ),
                         colour: mycolour,
                       ),
@@ -41,6 +54,7 @@ class LoginPage extends StatelessWidget {
               ),
               Expanded(
                 child: MyContainer(
+                  childCard: Container(),
                   colour: mycolour,
                 ),
               ),
@@ -48,13 +62,21 @@ class LoginPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      child: MyContainer(
-                        colour: mycolour,
+                      child: increment(
+                        mycolour: mycolour,
+                        iicon: Icon(
+                          FontAwesomeIcons.add,
+                          size: 50,
+                        ),
                       ),
                     ),
                     Expanded(
-                      child: MyContainer(
-                        colour: mycolour,
+                      child: increment(
+                        mycolour: mycolour,
+                        iicon: Icon(
+                          FontAwesomeIcons.minus,
+                          size: 50,
+                        ),
                       ),
                     ),
                   ],
@@ -68,6 +90,80 @@ class LoginPage extends StatelessWidget {
               )
             ],
           )),
+    );
+  }
+}
+
+class increment extends StatelessWidget {
+  const increment({
+    Key? key,
+    required this.mycolour,
+    required this.iicon,
+  }) : super(key: key);
+
+  final Color mycolour;
+  final Icon iicon;
+
+  @override
+  Widget build(BuildContext context) {
+    return MyContainer(
+      childCard: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          MyCard(
+            icon: iicon,
+            tag: '',
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.add_circle_outline,
+                size: 30,
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "0",
+                style: TextStyle(fontSize: 50, color: Color(0xFF8D8E98)),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Icon(
+                Icons.remove_circle_outline,
+                size: 30,
+              ),
+            ],
+          )
+        ],
+      ),
+      colour: mycolour,
+    );
+  }
+}
+
+class MyCard extends StatelessWidget {
+  MyCard({required this.icon, required this.tag});
+
+  final Icon icon;
+  final String tag;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        icon,
+        SizedBox(
+          height: 15,
+        ),
+        Text(
+          tag,
+          style: TextStyle(fontSize: 18, color: Color(0xFF8D8E98)),
+        ),
+      ],
     );
   }
 }
