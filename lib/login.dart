@@ -4,7 +4,7 @@ class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   static final Color mycolour = Color(0xFF151515);
-
+  static const bottomContainerHeight = 70.0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,6 +30,9 @@ class LoginPage extends StatelessWidget {
                     ),
                     Expanded(
                       child: MyContainer(
+                        childCard: Column(
+                          children: [Icon()],
+                        ),
                         colour: mycolour,
                       ),
                     ),
@@ -60,7 +63,7 @@ class LoginPage extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(top: 10.0),
                 width: double.infinity,
-                height: 70.0,
+                height: bottomContainerHeight,
                 color: Color(0xFFEB1555),
               )
             ],
@@ -70,12 +73,14 @@ class LoginPage extends StatelessWidget {
 }
 
 class MyContainer extends StatelessWidget {
-  MyContainer({required this.colour});
+  MyContainer({required this.colour, required this.childCard});
   final Color colour;
+  final Widget childCard;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      child: childCard,
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
