@@ -96,10 +96,9 @@ class LoginPage extends StatelessWidget {
 
 class increment extends StatelessWidget {
   const increment({
-    Key? key,
     required this.mycolour,
     required this.iicon,
-  }) : super(key: key);
+  });
 
   final Color mycolour;
   final Icon iicon;
