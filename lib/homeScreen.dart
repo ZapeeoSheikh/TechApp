@@ -93,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Login",
+                        "Calculate BMI",
                         style: TextStyle(
                           color: MyColor.ThemeColor,
                           fontWeight: FontWeight.bold,
