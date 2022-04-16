@@ -55,7 +55,7 @@ class LoginPage extends StatelessWidget {
 
 class MyContainer extends StatelessWidget {
   MyContainer({required this.colour});
-  Color colour;
+  final Color colour;
 
   @override
   Widget build(BuildContext context) {
